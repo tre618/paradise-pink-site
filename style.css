@@ -1,0 +1,126 @@
+/* ===========================================================
+   PARADISE PINK FESTIVAL — Stylesheet
+   Premium pink / black / blush palette, editorial festival feel
+   =========================================================== */
+
+:root{
+    --black:#0a0a0d;
+    --ink:#121014;
+    --charcoal:#1c181c;
+    --white:#ffffff;
+    --blush:#f7d3e0;
+    --blush-soft:#fbe6ee;
+    --rose:#e1749e;
+    --pink:#ff2d78;
+    --pink-deep:#c8106b;
+    --fuchsia:#ff5fa2;
+    --gold:#cda45e;
+    --muted:#b9a9b2;
+    --line: rgba(255,255,255,0.10);
+
+  --serif: "Playfair Display", Georgia, serif;
+    --sans: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --script: "Parisienne", cursive;
+
+  --container: 1180px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+    background:var(--black);
+    color:var(--white);
+    font-family:var(--sans);
+    font-weight:300;
+    line-height:1.65;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;letter-spacing:0.01em;}
+.container{
+    width:100%;
+    max-width:var(--container);
+    margin:0 auto;
+    padding:0 28px;
+}
+section{position:relative;z-index:2;}
+
+/* ---- Reusable type ---- */
+.eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-family:var(--sans);
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:var(--rose);
+    margin-bottom:18px;
+}
+.eyebrow::before{
+    content:"";
+    width:28px;height:1px;
+    background:linear-gradient(90deg,var(--pink),transparent);
+}
+h2.section-title{
+    font-size:clamp(2rem, 4vw, 3.2rem);
+    line-height:1.1;
+    margin-bottom:20px;
+    color:var(--white);
+}
+h2.section-title em{
+    font-style:italic;
+    background:linear-gradient(90deg,var(--pink),var(--fuchsia) 60%, var(--gold));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+.section-lede{
+    max-width:640px;
+    color:var(--muted);
+    font-size:1.05rem;
+    font-weight:300;
+}
+.section-head{
+    max-width:760px;
+    margin-bottom:56px;
+}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+.section-head.center .eyebrow::before{display:none;}
+.section-head.center .section-lede{margin:0 auto;}
+
+.pad{padding:120px 0;}
+.pad-sm{padding:80px 0;}
+
+/* ---- Buttons ---- */
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:16px 32px;
+    border-radius:999px;
+    font-family:var(--sans);
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    cursor:pointer;
+    border:1px solid transparent;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+    white-space:nowrap;
+}
+.btn-primary{
+    background:linear-gradient(135deg,var(--pink),var(--pink-deep));
+    color:var(--white);
+    box-shadow:0 8px 30px -8px rgba(255,45,120,0.65);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 34px -8px rgba(255,45,120,0.85);}
+.btn-outline{
+    background:transparent;
+    border-color:rgba(255,255,255,0.35);
+  
