@@ -563,3 +563,69 @@ blockquote.pull-quote cite{
 }
 .value-card{
    
+  padding:32px 28px;
+     border-radius:18px;
+     border:1px solid var(--line);
+     background:rgba(255,255,255,0.02);
+     transition:border-color .25s ease, transform .25s ease;
+}
+.value-card:hover{border-color:var(--pink);transform:translateY(-4px);}
+.value-card .tag-num{
+     font-family:var(--serif);font-style:italic;color:var(--gold);font-size:.9rem;margin-bottom:16px;display:block;
+}
+.value-card h4{font-size:1.1rem;margin-bottom:10px;}
+.value-card p{color:var(--muted);font-size:.92rem;}
+
+.sponsor-cta{
+     display:flex;
+     align-items:center;
+     justify-content:space-between;
+     gap:30px;
+     flex-wrap:wrap;
+     padding:38px;
+     border-radius:22px;
+     background:linear-gradient(120deg, rgba(255,45,120,0.18), rgba(205,164,94,0.10));
+     border:1px solid rgba(255,255,255,0.14);
+}
+.sponsor-cta h3{font-size:1.5rem;max-width:480px;}
+.sponsor-cta p{color:var(--muted);margin-top:8px;max-width:480px;}
+.sponsor-cta-actions{display:flex;gap:14px;flex-wrap:wrap;}
+
+@media (max-width:920px){
+     .sponsor-top{grid-template-columns:1fr;gap:30px;}
+     .value-grid{grid-template-columns:1fr;}
+}
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+.experience-grid{
+     display:grid;
+     grid-template-columns:repeat(4,1fr);
+     gap:24px;
+}
+.exp-card{
+     border-radius:18px;
+     padding:1px;
+     background:linear-gradient(160deg, rgba(255,45,120,0.5), rgba(255,255,255,0.05));
+}
+.exp-card-inner{
+     background:var(--ink);
+     border-radius:17px;
+     padding:32px 24px;
+     height:100%;
+}
+.exp-card .ico{font-size:26px;margin-bottom:18px;display:block;}
+.exp-card h4{font-size:1.05rem;margin-bottom:10px;}
+.exp-card p{color:var(--muted);font-size:.9rem;}
+
+@media (max-width:920px){.experience-grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:600px){.experience-grid{grid-template-columns:1fr;}}
+
+/* ---- Ticket tiers ---- */
+.tiers{
+     margin-top:70px;
+     display:grid;
+     grid-template-columns:repeat(3,1fr);
+     gap:24px;
+   
