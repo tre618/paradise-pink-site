@@ -629,3 +629,63 @@ blockquote.pull-quote cite{
      grid-template-columns:repeat(3,1fr);
      gap:24px;
    
+}
+.tier-card{
+     border-radius:20px;
+     border:1px solid var(--line);
+     padding:36px 30px;
+     background:rgba(255,255,255,0.02);
+     display:flex;flex-direction:column;
+}
+.tier-card.featured{
+     border-color:var(--pink);
+     background:linear-gradient(160deg, rgba(255,45,120,0.14), rgba(255,255,255,0.02));
+     transform:scale(1.02);
+}
+.tier-badge{
+     align-self:flex-start;
+     font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+     padding:5px 12px;border-radius:999px;
+     background:var(--pink);color:#fff;margin-bottom:20px;
+}
+.tier-price{font-family:var(--serif);font-size:2rem;margin-bottom:2px;}
+.tier-price small{font-size:.9rem;font-weight:400;color:var(--muted);}
+.tier-name{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin-bottom:22px;}
+.tier-list{flex:1;margin-bottom:26px;}
+.tier-list li{
+     padding:9px 0;
+     border-bottom:1px dashed var(--line);
+     font-size:.92rem;
+     color:#ddd0d6;
+}
+.tier-list li.off{color:#5f5560;text-decoration:line-through;}
+
+@media (max-width:920px){.tiers{grid-template-columns:1fr;}.tier-card.featured{transform:none;}}
+
+/* =========================================================
+   CREDIBILITY / PARTNERS
+   ========================================================= */
+.credibility{background:var(--black);text-align:center;}
+.partner-row{
+     display:flex;
+     flex-wrap:wrap;
+     justify-content:center;
+     gap:20px;
+     margin-top:50px;
+}
+.partner-chip{
+     padding:20px 34px;
+     border:1px solid var(--line);
+     border-radius:14px;
+     font-family:var(--serif);
+     font-size:1rem;
+     color:var(--muted);
+     background:rgba(255,255,255,0.02);
+}
+.credibility-note{
+     margin-top:26px;
+     font-size:.85rem;
+     color:var(--muted);
+     max-width:560px;
+     margin-left:auto;margin-right:auto;
+}
