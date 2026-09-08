@@ -436,3 +436,69 @@ blockquote.pull-quote cite{
 @media (max-width:600px){.vision-grid{grid-template-columns:1fr;}}
 
 /* =========================================================
+   WHY IT MATTERS
+   ========================================================= */
+.matters{background:var(--black);}
+.matters-grid{
+     display:grid;
+     grid-template-columns:repeat(4,1fr);
+     gap:24px;
+}
+.matter-card{
+     padding:34px 26px;
+     border-radius:18px;
+     background:linear-gradient(160deg, rgba(255,45,120,0.08), rgba(255,255,255,0.02));
+     border:1px solid var(--line);
+     text-align:left;
+}
+.matter-card .ico{
+     width:46px;height:46px;
+     border-radius:50%;
+     display:flex;align-items:center;justify-content:center;
+     background:linear-gradient(135deg,var(--pink),var(--pink-deep));
+     margin-bottom:22px;
+     font-size:20px;
+}
+.matter-card h4{font-size:1.05rem;margin-bottom:10px;}
+.matter-card p{color:var(--muted);font-size:.92rem;}
+
+@media (max-width:920px){.matters-grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:600px){.matters-grid{grid-template-columns:1fr;}}
+
+/* =========================================================
+   STYLE & VIBE (DRESS CODE GALLERY)
+   ========================================================= */
+.style-vibe{background:var(--black);}
+.vibe-gallery{
+     display:grid;
+     grid-template-columns:repeat(4, 1fr);
+     grid-auto-rows:150px;
+     gap:14px;
+}
+.vibe-item{
+     margin:0;
+     border-radius:16px;
+     overflow:hidden;
+     position:relative;
+     border:1px solid var(--line);
+     background:var(--ink);
+}
+.vibe-item img{
+     width:100%;height:100%;
+     object-fit:cover;
+     display:block;
+     transition:transform .5s ease;
+}
+.vibe-item:hover img{transform:scale(1.06);}
+.vibe-tall{grid-column:span 2;grid-row:span 2;}
+.vibe-wide{grid-column:span 2;grid-row:span 1;}
+
+.vibe-gallery-single{
+     display:flex;
+     justify-content:center;
+}
+.vibe-feature{
+     width:100%;
+     max-width:560px;
+     aspect-ratio:4/5;
+   
