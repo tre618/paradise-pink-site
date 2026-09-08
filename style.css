@@ -689,3 +689,69 @@ blockquote.pull-quote cite{
      max-width:560px;
      margin-left:auto;margin-right:auto;
 }
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+.contact{
+     background:linear-gradient(180deg, var(--ink), var(--black));
+     border-top:1px solid var(--line);
+}
+.contact .container{
+     display:grid;
+     grid-template-columns:0.9fr 1.1fr;
+     gap:60px;
+}
+.contact-info h2{margin-bottom:18px;}
+.contact-info p{color:var(--muted);margin-bottom:34px;max-width:420px;}
+.contact-list{display:flex;flex-direction:column;gap:22px;margin-bottom:34px;}
+.contact-list li{display:flex;gap:14px;align-items:flex-start;}
+.contact-list b{display:block;font-size:.95rem;}
+.contact-list span{font-size:.85rem;color:var(--muted);}
+.contact-social{display:flex;gap:14px;}
+.contact-social a{
+     width:40px;height:40px;border-radius:50%;
+     border:1px solid var(--line);
+     display:flex;align-items:center;justify-content:center;
+     font-size:14px;color:var(--white);
+     transition:border-color .2s ease,color .2s ease;
+}
+.contact-social a:hover{border-color:var(--pink);color:var(--pink);}
+.contact-social svg{width:18px;height:18px;}
+
+.form-card{
+     padding:38px;
+     border-radius:22px;
+     background:rgba(255,255,255,0.03);
+     border:1px solid var(--line);
+}
+.form-tabs{
+     display:flex;
+     gap:8px;
+     margin-bottom:26px;
+     flex-wrap:wrap;
+}
+.form-tab{
+     padding:9px 16px;
+     border-radius:999px;
+     font-size:12px;
+     letter-spacing:.04em;
+     text-transform:uppercase;
+     border:1px solid var(--line);
+     cursor:pointer;
+     background:transparent;
+     color:var(--muted);
+}
+.form-tab.active{background:var(--pink);border-color:var(--pink);color:#fff;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.field{margin-bottom:16px;display:flex;flex-direction:column;gap:8px;}
+.field label{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+.field input,.field select,.field textarea{
+     background:rgba(255,255,255,0.04);
+     border:1px solid var(--line);
+     border-radius:10px;
+     padding:13px 14px;
+     color:var(--white);
+     font-family:var(--sans);
+     font-size:.92rem;
+   
