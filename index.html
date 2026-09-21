@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paradise Pink Festival — SoCal's Premier All-Pink Music & Culture Festival</title>
+<meta name="description" content="Paradise Pink Festival unites music, culture, and breast cancer awareness for one unforgettable night in October 2027 — built in honor of DeGeta Cole. Sponsor, invest, or join the movement." />
+<meta name="keywords" content="Paradise Pink Festival, all pink festival, breast cancer awareness event, Los Angeles music festival, pink dress code party, oceanfront festival LA, breast cancer fundraiser event" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://paradisepinkfestival.com/" />
+<meta name="google-site-verification" content="_1XFxoAUkd-sFRppNtUi9-8ydqjbg1hjkPG-nvhIl9U" />
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Paradise Pink Festival" />
+<meta property="og:title" content="Paradise Pink Festival — SoCal's Premier All-Pink Music & Culture Festival" />
+<meta property="og:description" content="One night. One city. One purpose. October 2027 in Los Angeles — a premium music & culture festival raising breast cancer awareness, built in honor of DeGeta Cole." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://paradisepinkfestival.com/" />
+<meta property="og:image" content="https://paradisepinkfestival.com/images/og-share.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Paradise Pink Festival — SoCal's Premier All-Pink Music & Culture Festival" />
+<meta name="twitter:description" content="One night. One city. One purpose. October 2027 in Los Angeles — a premium music & culture festival raising breast cancer awareness, built in honor of DeGeta Cole." />
+<meta name="twitter:image" content="https://paradisepinkfestival.com/images/og-share.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Poppins:wght@300;400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
+<link rel="stylesheet" href="style.css" />
+
+<!-- Structured data: Event schema for rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Paradise Pink Festival",
+  "description": "Paradise Pink is an all-pink music and culture festival created by D'Antré Cole in honor of his mother — blending music, community, breast cancer awareness, and belonging into one unforgettable oceanfront night in Los Angeles.",
+  "startDate": "2027-10",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": "Oceanfront, Los Angeles",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "image": ["https://paradisepinkfestival.com/images/og-share.jpg"],
+  "organizer": {
+    "@type": "Organization",
+    "name": "Paradise Pink Festival",
+    "url": "https://paradisepinkfestival.com/"
+  },
+  "performer": {
+    "@type": "Organization",
+    "name": "Paradise Pink Festival Lineup"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- DeGeta background motif: exact port of the digital-rain effect
+     from galaxygleammedia.com, recolored to Paradise Pink. -->
+<canvas id="degeta-canvas" class="degeta-canvas" aria-hidden="true"></canvas>
+<div class="degeta-veil" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="container">
+    <a href="#top" class="brand">
+      <img src="images/logo-icon.png" alt="" class="brand-icon" width="40" height="40" />
+      <span class="brand-text">
+        <span class="brand-mark">PARADISE <span>PINK</span></span>
+        <span class="brand-sub">MUSIC &amp; CULTURE FESTIVAL</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#event">Events</a>
+      <a href="#story">Our Story</a>
+      <a href="#vision">Vision</a>
+      <a href="#style">The Look</a>
+      <a href="#sponsors">Sponsors &amp; Investors</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="nav-social">
+        <a href="https://www.instagram.com/Paradisepinkfest" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61589684457995" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.8h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46H16.6V4.14C16.3 4.1 15.3 4 14.1 4c-2.4 0-4.1 1.47-4.1 4.16v2.04H7.4v3h2.6V21h3.5z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@paradise.pink56" aria-label="TikTok" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2.2 1.7 3.9 4 4.2v2.7c-1.5 0-2.8-.5-4-1.3v6.7c0 3.1-2.5 5.6-5.6 5.6S5.3 17.4 5.3 14.3c0-3 2.4-5.5 5.4-5.6v2.8a2.8 2.8 0 1 0 2.8 2.8V3h3z"/></svg>
+        </a>
+      </div>
+      <a href="#contact" class="btn btn-outline">Join the Movement</a>
+      <a href="#sponsors" class="btn btn-primary">Sponsor With Us</a>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <button class="mobile-close" aria-label="Close menu">✕</button>
+  <a href="#event">Events</a>
+  <a href="#story">Our Story</a>
+  <a href="#vision">Vision</a>
+  <a href="#style">The Look</a>
+  <a href="#sponsors">Sponsors &amp; Investors</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+  <a href="#sponsors" class="btn btn-primary">Sponsor With Us</a>
+  <div class="mobile-social">
+    <a href="https://www.instagram.com/Paradisepinkfest" aria-label="Instagram" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61589684457995" aria-label="Facebook" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.8h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46H16.6V4.14C16.3 4.1 15.3 4 14.1 4c-2.4 0-4.1 1.47-4.1 4.16v2.04H7.4v3h2.6V21h3.5z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@paradise.pink56" aria-label="TikTok" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2.2 1.7 3.9 4 4.2v2.7c-1.5 0-2.8-.5-4-1.3v6.7c0 3.1-2.5 5.6-5.6 5.6S5.3 17.4 5.3 14.3c0-3 2.4-5.5 5.4-5.6v2.8a2.8 2.8 0 1 0 2.8 2.8V3h3z"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-copy">
+      <div class="hero-date-badge">October 2027 · Los Angeles</div>
+      <div class="hero-eyebrow">SoCal's Premier All-Pink Music &amp; Culture Festival</div>
+      <h1>One Night. <br />One City. <br /><span class="accent">One Purpose.</span></h1>
+      <p class="hero-sub">
+        Paradise Pink is an all-pink music and culture festival created by D'Antré Cole in honor of his mother — blending music, community, breast cancer awareness, and belonging into one unforgettable night in October 2027. Launching in Los Angeles, Paradise Pink is built from day one as a multi-city festival, with a growing lineup of cities to follow. A portion of every ticket supports a major breast cancer organization.
+      </p>
+      <div class="hero-cta">
+        <a href="#sponsors" class="btn btn-primary">Become a Sponsor</a>
+        <a href="#contact" class="btn btn-outline">Join the Movement</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>1,500–3,000</b><span>Est. Guests, Year One</span></div>
+        <div class="hero-stat"><b>1</b><span>Oceanfront Stage</span></div>
+        <div class="hero-stat"><b>∞</b><span>Multi-City Vision</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><div class="line"></div></div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Music <b>·</b></span>
+    <span>Culture <b>·</b></span>
+    <span>Awareness <b>·</b></span>
+    <span>Community <b>·</b></span>
+    <span>Celebration <b>·</b></span>
+    <span>In Honor of DeGeta Cole <b>·</b></span>
+    <span>Music <b>·</b></span>
+    <span>Culture <b>·</b></span>
+    <span>Awareness <b>·</b></span>
+    <span>Community <b>·</b></span>
+    <span>Celebration <b>·</b></span>
+    <span>In Honor of DeGeta Cole <b>·</b></span>
+  </div>
+</div>
+
+<!-- ============ EVENTS (leading up to the festival) ============ -->
+<section class="event-social" id="event">
+  <div class="container">
+    <div class="section-head center reveal event-social-head">
+      <div class="eyebrow">On The Way To October 2027</div>
+      <h2 class="section-title">Events Leading Up To <em>Paradise Pink</em></h2>
+      <p class="section-lede">Before the main festival, we're building the community with smaller gatherings along the way. Tap an event below to RSVP on Partiful.</p>
+    </div>
+    <a class="event-card reveal" href="https://partiful.com/e/znN9ov4CObcOIXduQUK9" target="_blank" rel="noopener" aria-label="RSVP for the Ice Cream & Dessert Social on Partiful">
+      <div class="event-card-glow" aria-hidden="true"></div>
+      <img src="images/logo-icon.png" alt="Paradise Pink" class="event-logo" width="64" height="64" />
+      <div class="event-card-body">
+        <div class="eyebrow">Save The Date · Breast Cancer Awareness Month</div>
+        <h3 class="event-title">Ice Cream &amp; Dessert <em>Social</em></h3>
+        <p class="event-sub">A sweet afternoon of community &amp; connection, hosted by Paradise Pink. Wear pink and bring a friend.</p>
+        <div class="event-meta">
+          <div class="event-meta-item">
+            <span class="ico">📅</span>
+            <div><b>Sunday, October 18</b><span>1:00 – 5:00 PM</span></div>
+          </div>
+          <div class="event-meta-item">
+            <span class="ico">📍</span>
+            <div><b>11520 W Pico Blvd</b><span>Los Angeles, CA 90064</span></div>
+          </div>
+        </div>
+        <span class="btn btn-primary">RSVP on Partiful →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="story pad" id="story">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Our Story</div>
+      <h2 class="section-title">Built in Honor of <em>DeGeta Cole</em></h2>
+    </div>
+    <div class="story-flank-grid reveal">
+      <div class="story-text story-text-left">
+        <p>Paradise Pink is an all-pink music and culture festival built with purpose.</p>
+        <p>Created by D'Antré Cole in honor of his mother, DeGeta Cole, Paradise Pink was born from love, loss, and the desire to transform heartbreak into hope. Pink was DeGeta's favorite color, and it lives at the heart of everything Paradise Pink represents.</p>
+        <p>DeGeta and her husband, Rodney Cole, were incredible parents who believed in giving, loving, and serving others. Their home was always open — not only to their own children, but to other kids who needed guidance, support, or simply a place where they felt loved. They raised their family with compassion, generosity, and a deep sense of community, values that continue to inspire everything Paradise Pink stands for today.</p>
+        <p>After bravely battling breast cancer, DeGeta contracted COVID-19 while undergoing chemotherapy. Even through her treatments, she remained hopeful and focused on getting healthy because she and Rodney had planned the trip of a lifetime to Paris in 2021. Tragically, that trip never came. DeGeta passed away on December 31, 2020, leaving behind a family that was completely devastated.</p>
+        <p>Just weeks earlier, she had celebrated her birthday surrounded by D'Antré and their family. None of them realized it would be the last birthday they would ever share together.</p>
+      </div>
+      <div class="story-portrait-stack">
+        <div class="story-portrait-center">
+          <img src="images/degeta-2.jpg" alt="DeGeta Cole, in loving memory" loading="lazy" decoding="async" />
+          <span class="signature">DeGeta</span>
+          <span class="story-dates">1958 – 2020</span>
+        </div>
+        <div class="story-mini-row">
+          <div class="story-mini-photo">
+            <img src="images/degeta-3.jpg" alt="DeGeta Cole at her desk" loading="lazy" decoding="async" />
+          </div>
+          <div class="story-mini-photo">
+            <img src="images/degeta-4.jpg" alt="DeGeta and Rodney Cole" loading="lazy" decoding="async" />
+          </div>
+        </div>
+      </div>
+      <div class="story-text story-text-right">
+        <p>Determined to honor his mother's legacy, D'Antré poured his grief into creation instead of giving up. In just four months, he released six films while building an ecosystem of companies, creative projects, events, and communities designed to bring people together. Of everything he has created, Paradise Pink is the most personal. It is his greatest tribute to the woman who taught him the importance of love, kindness, and making people feel like they belong.</p>
+        <p>Paradise Pink brings together music, community, fashion, culture, and impact for one unforgettable experience. Every guest is invited to wear pink — not simply as a color, but as a symbol of unity, remembrance, strength, hope, and love.</p>
+        <p>In partnership with a major breast cancer organization, a portion of every ticket sold directly supports the fight against breast cancer. Every ticket, every sponsor, every performance, and every shared moment helps move that mission forward.</p>
+        <p>This festival is for the survivors. For the families. For the people we've lost. For those still fighting. And for everyone searching for a place where they are welcomed, celebrated, and never alone.</p>
+        <p>Paradise Pink is more than a festival. It is a movement — built from love, powered by community, and created to honor DeGeta Cole's legacy while bringing hope to families for generations to come.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISION ============ -->
+<section class="pad" id="vision">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">The Vision</div>
+      <h2 class="section-title">A Festival Built to <em>Grow</em></h2>
+      <p class="section-lede">Paradise Pink is designed from day one as a scalable, annual event property — not a single show. Starting with an estimated 1,500–3,000 person debut in Los Angeles in October 2027, the long-term vision is a touring festival series that carries music, culture, and cause into cities across the country.</p>
+    </div>
+    <div class="story-mission vision-mission">
+      <div class="story-mission-label">Our Mission</div>
+      <p>Paradise Pink Festival is a purpose-driven music and culture festival founded by D'Antré Cole in honor of his mother, DeGeta Cole. Inspired by her love, strength, and legacy, Paradise Pink was created to bring people together through world-class music, fashion, wellness, and community while raising awareness for breast cancer. As a lifelong music lover with a passion for discovering incredible talent across pop, R&B, house, reggae, rock, hip-hop, Latin, Afrobeats, country, and more, D'Antré has spent years introducing people to thousands of artists they may have never discovered otherwise — even during his years driving rideshare, where passengers constantly asked about the music he played. Paradise Pink exists to give talented emerging artists from around the world a larger stage to connect with new audiences alongside established performers. More than a festival, it's a movement built on purpose, belonging, positivity, and unforgettable experiences, with a vision to grow into a multi-city celebration that spreads breast cancer awareness in every city it visits, uplifts communities, creates opportunities, and leaves a lasting impact for generations to come.</p>
+    </div>
+    <div class="vision-grid reveal">
+      <div class="vision-card">
+        <span class="num">01</span>
+        <h4>Annual Flagship Event</h4>
+        <p>A signature oceanfront experience in Los Angeles that returns and grows every year, building tradition and loyalty.</p>
+      </div>
+      <div class="vision-card">
+        <span class="num">02</span>
+        <h4>Multi-City Expansion</h4>
+        <p>A repeatable festival format designed to launch in new markets — each city adding audience, revenue, and reach.</p>
+      </div>
+      <div class="vision-card">
+        <span class="num">03</span>
+        <h4>Media &amp; Content Engine</h4>
+        <p>Influencer culture, celebrity presence, and social-first design built to generate content and press at scale.</p>
+      </div>
+      <div class="vision-card">
+        <span class="num">04</span>
+        <h4>Nonprofit &amp; Community Network</h4>
+        <p>Deepening alignment with breast cancer organizations and local partners in every city Paradise Pink enters.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY IT MATTERS ============ -->
+<section class="matters pad" id="why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Why It Matters</div>
+      <h2 class="section-title">More Than a Festival — <em>A&nbsp;Movement</em></h2>
+      <p class="section-lede">Paradise Pink exists at the intersection of celebration and cause. Every part of the experience is designed to make awareness feel joyful, not heavy — and impact feel real, not performative.</p>
+    </div>
+    <div class="matters-grid reveal">
+      <div class="matter-card">
+        <div class="ico">🎗️</div>
+        <h4>Breast Cancer Awareness</h4>
+        <p>Education, donation, and survivorship storytelling woven directly into the festival experience.</p>
+      </div>
+      <div class="matter-card">
+        <div class="ico">🤝</div>
+        <h4>Community Healing</h4>
+        <p>A shared space where survivors, families, and supporters come together in celebration, not sorrow.</p>
+      </div>
+      <div class="matter-card">
+        <div class="ico">✨</div>
+        <h4>Celebration of Life</h4>
+        <p>Music, color, and joy as tools for honoring loss and celebrating the people still fighting.</p>
+      </div>
+      <div class="matter-card">
+        <div class="ico">🌍</div>
+        <h4>Cultural Visibility</h4>
+        <p>Elevating breast cancer awareness within hip-hop, R&amp;B, and youth culture — spaces it rarely reaches.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STYLE & VIBE (DRESS CODE) ============ -->
+<section class="style-vibe pad" id="style">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">The Look</div>
+      <h2 class="section-title">Dress in <em>Pink</em>. Show Up for the Vibe.</h2>
+      <p class="section-lede">Paradise Pink is an all-pink dress code — not a rule, but an invitation. Dresses, suits, streetwear, glam, anything goes as long as it's pink. One color, one crowd, one unforgettable night by the ocean.</p>
+    </div>
+    <div class="vibe-gallery vibe-gallery-trio reveal">
+      <figure class="vibe-item">
+        <img src="images/vibe-look-1.jpg" alt="Festival-goers showing up in all-pink outfits for Paradise Pink" decoding="async" />
+      </figure>
+      <figure class="vibe-item">
+        <img src="images/vibe-look-2.jpg" alt="Friends in coordinated pink looks for Paradise Pink dress code inspiration" decoding="async" />
+      </figure>
+      <figure class="vibe-item">
+        <img src="images/vibe-look-3.jpg" alt="Group dressed head-to-toe in pink showing the Paradise Pink vibe" decoding="async" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPONSOR / INVESTOR OPPORTUNITY ============ -->
+<section class="sponsor pad" id="sponsors">
+  <div class="container">
+    <div class="sponsor-top">
+      <div class="section-head reveal">
+        <div class="eyebrow">Partner With Purpose</div>
+        <h2 class="section-title">Why Sponsors &amp; Investors Choose <em>Paradise Pink</em></h2>
+        <p class="section-lede">Paradise Pink offers a rare combination: a premium, culturally relevant experience with a built-in emotional connection and a clear growth trajectory. This is a brand partners can align with — and grow with.</p>
+      </div>
+      <div class="sponsor-stats reveal">
+        <div class="sponsor-stat"><b>1,500–3,000</b><span>Est. attendees at debut event, Los Angeles</span></div>
+        <div class="sponsor-stat"><b>11hrs+</b><span>Of programming, content, and brand exposure per event</span></div>
+        <div class="sponsor-stat"><b>Multi-City</b><span>Expansion roadmap beyond the LA debut</span></div>
+      </div>
+    </div>
+
+    <div class="value-grid reveal">
+      <div class="value-card">
+        <span class="tag-num">Reach</span>
+        <h4>Built-In Audience</h4>
+        <p>Direct access to an engaged, culturally connected audience across music, lifestyle, and wellness communities.</p>
+      </div>
+      <div class="value-card">
+        <span class="tag-num">Equity</span>
+        <h4>Cause-Aligned Brand Value</h4>
+        <p>Association with a mission-driven brand strengthens trust and emotional connection with consumers.</p>
+      </div>
+      <div class="value-card">
+        <span class="tag-num">Placement</span>
+        <h4>Premium Experiential Space</h4>
+        <p>Oceanfront activations, VIP zones, and stage presence designed for meaningful, memorable brand integration.</p>
+      </div>
+      <div class="value-card">
+        <span class="tag-num">Growth</span>
+        <h4>Multi-City Trajectory</h4>
+        <p>Ground-floor partnership on a festival built to expand — with sponsorship value that grows alongside it.</p>
+      </div>
+      <div class="value-card">
+        <span class="tag-num">Content</span>
+        <h4>Media &amp; Social Value</h4>
+        <p>Influencer, celebrity, and content-driven design generates organic reach that extends far beyond the event day.</p>
+      </div>
+      <div class="value-card">
+        <span class="tag-num">Impact</span>
+        <h4>Measurable Community Impact</h4>
+        <p>Clear reporting on funds raised, awareness generated, and community engagement for every partner.</p>
+      </div>
+    </div>
+
+    <div class="sponsor-cta reveal">
+      <div>
+        <h3>Ready to talk partnership?</h3>
+        <p>Request the sponsorship deck or set up a call with the Paradise Pink team.</p>
+      </div>
+      <div class="sponsor-cta-actions">
+        <a href="#contact" class="btn btn-primary">Request Sponsorship Deck</a>
+        <a href="#contact" class="btn btn-ghost-gold">Investor Inquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="pad" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">The Experience</div>
+      <h2 class="section-title">A Full Day &amp; Night <em>Production</em></h2>
+      <p class="section-lede">From noon to 10:30PM, Paradise Pink brings together world-class music, immersive culture, and a stunning oceanfront setting for a full-day experience — not just a concert.</p>
+    </div>
+    <div class="experience-grid reveal">
+      <div class="exp-card"><div class="exp-card-inner">
+        <span class="ico">🎤</span>
+        <h4>Main Stage</h4>
+        <p>Headliners and rising artists performing R&amp;B, hip-hop, and soul against the Pacific sunset with concert-grade production.</p>
+      </div></div>
+      <div class="exp-card"><div class="exp-card-inner">
+        <span class="ico">👑</span>
+        <h4>VIP Celebrity Zone</h4>
+        <p>An exclusive ocean-view lounge with influencers, podcasters, and celebrity guests — a ticketed premium experience.</p>
+      </div></div>
+      <div class="exp-card"><div class="exp-card-inner">
+        <span class="ico">🎀</span>
+        <h4>Cause Activation Hub</h4>
+        <p>A dedicated awareness hub for donations, education, and survivorship storytelling — where every ticket makes an impact.</p>
+      </div></div>
+      <div class="exp-card"><div class="exp-card-inner">
+        <span class="ico">🌊</span>
+        <h4>Ocean Backdrop</h4>
+        <p>The Pacific Ocean as a living, breathing stage backdrop — a setting unlike any other festival in the country.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDIBILITY / PARTNERS ============ -->
+<section class="credibility pad-sm">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Partnership &amp; Credibility</div>
+      <h2 class="section-title">Built for <em>Real Partnership</em></h2>
+    </div>
+    <div class="partner-row reveal">
+      <div class="partner-chip">Major Breast Cancer Organization — Cause Alignment</div>
+      <div class="partner-chip">Founding Sponsor</div>
+      <div class="partner-chip">Media Partner</div>
+      <div class="partner-chip">Community Partner</div>
+    </div>
+    <p class="credibility-note reveal">Paradise Pink is actively building its founding partner roster. Sponsor and organizational logos will populate this space as partnerships are finalized.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact pad" id="contact">
+  <div class="container">
+    <div class="contact-info reveal">
+      <div class="eyebrow">Get In Touch</div>
+      <h2 class="section-title">Let's Build This <em>Together</em></h2>
+      <p>Whether you're a sponsor, investor, media contact, or future collaborator — we'd love to hear from you. Every inquiry reaches the Paradise Pink team directly.</p>
+      <ul class="contact-list">
+        <li><b>General &amp; Media Inquiries</b><span>info@paradisepinkfestival.com</span></li>
+        <li><b>Sponsorship &amp; Partnerships</b><span>Use the form — select "Sponsorship" below</span></li>
+        <li><b>Investor Relations</b><span>Use the form — select "Investor / Partner" below</span></li>
+      </ul>
+      <div class="contact-social">
+        <a href="https://www.instagram.com/Paradisepinkfest" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61589684457995" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.8h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46H16.6V4.14C16.3 4.1 15.3 4 14.1 4c-2.4 0-4.1 1.47-4.1 4.16v2.04H7.4v3h2.6V21h3.5z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@paradise.pink56" aria-label="TikTok" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2.2 1.7 3.9 4 4.2v2.7c-1.5 0-2.8-.5-4-1.3v6.7c0 3.1-2.5 5.6-5.6 5.6S5.3 17.4 5.3 14.3c0-3 2.4-5.5 5.4-5.6v2.8a2.8 2.8 0 1 0 2.8 2.8V3h3z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="form-card reveal">
+      <div class="form-tabs">
+        <button type="button" class="form-tab active" data-type="Sponsorship">Sponsorship</button>
+        <button type="button" class="form-tab" data-type="Investor / Partner">Investor / Partner</button>
+        <button type="button" class="form-tab" data-type="Media / Press">Media / Press</button>
+        <button type="button" class="form-tab" data-type="General">General</button>
+      </div>
+
+      <form id="inquiry-form" name="paradise-pink-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="paradise-pink-inquiry" />
+        <p class="hidden" style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <input type="hidden" id="inquiry-type" name="inquiry-type" value="Sponsorship" />
+
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="company">Company / Organization</label>
+            <input type="text" id="company" name="company" />
+          </div>
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Tell us about your interest</label>
+          <textarea id="message" name="message" required placeholder="Sponsorship goals, investment interest, press inquiry, or how you'd like to get involved..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+        <p class="form-note">We typically respond within 2–3 business days.</p>
+      </form>
+      <div class="form-success" id="inquiry-success">
+        <h4>Thank You</h4>
+        <p>Your inquiry has been received. The Paradise Pink team will be in touch soon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter">
+  <div class="container">
+    <div>
+      <h3>Stay in the Know</h3>
+      <p>Join the mailing list for lineup announcements, ticket access, and Paradise Pink updates.</p>
+    </div>
+    <form id="newsletter-form" name="paradise-pink-newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="newsletter-form">
+      <input type="hidden" name="form-name" value="paradise-pink-newsletter" />
+      <p class="hidden" style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email address" required />
+      <button type="submit" class="btn btn-primary">Join</button>
+    </form>
+    <div class="form-success" id="newsletter-success">
+      <p style="color:#fff;">Thank you — you're on the list!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand-mark">PARADISE <span style="color:#ff2d78;">PINK</span></div>
+        <p>SoCal's premier all-pink music &amp; culture festival — raising breast cancer awareness, one celebration at a time.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <a href="#story">Our Story</a>
+          <a href="#vision">Vision</a>
+          <a href="#experience">Experience</a>
+        </div>
+        <div class="footer-col">
+          <h5>Partner</h5>
+          <a href="#sponsors">Sponsors</a>
+          <a href="#sponsors">Investors</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="/legal-notice/">Legal Notice</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Paradise Pink Festival. All rights reserved.</span>
+      <span class="memory-tag">
+        <img src="images/degeta-1.jpg" alt="DeGeta Cole" class="memory-photo" loading="lazy" decoding="async" />
+        <span class="memory">In loving memory of DeGeta Cole</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
