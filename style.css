@@ -160,7 +160,7 @@ h2.section-title em{
 /* =========================================================
    EVENTS (leading up to the festival — Partiful RSVP cards)
    ========================================================= */
-.event-social{padding:64px 0 20px;}
+.event-social{padding:170px 0 40px;}
 .event-social-head{margin-bottom:36px;}
 .event-card{
   position:relative;
@@ -290,7 +290,7 @@ h2.section-title em{
   min-height:100vh;
   display:flex;
   align-items:center;
-  padding-top:140px;
+  padding-top:60px;
   padding-bottom:80px;
   position:relative;
 }
