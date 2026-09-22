@@ -42,6 +42,34 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   revealEls.forEach((el) => io.observe(el));
 
+  /* ---- Event countdown ---- */
+  document.querySelectorAll(".event-countdown").forEach((el) => {
+    const target = new Date(el.dataset.countdown).getTime();
+    const dEl = el.querySelector('[data-cd="d"]');
+    const hEl = el.querySelector('[data-cd="h"]');
+    const mEl = el.querySelector('[data-cd="m"]');
+    const sEl = el.querySelector('[data-cd="s"]');
+    const pad = (n) => String(n).padStart(2, "0");
+    function tick() {
+      const diff = target - Date.now();
+      if (diff <= 0) {
+        el.innerHTML = '<div class="cd-live">Happening now!</div>';
+        clearInterval(timer);
+        return;
+      }
+      const days = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
+      if (dEl) dEl.textContent = pad(days);
+      if (hEl) hEl.textContent = pad(hours);
+      if (mEl) mEl.textContent = pad(mins);
+      if (sEl) sEl.textContent = pad(secs);
+    }
+    tick();
+    const timer = setInterval(tick, 1000);
+  });
+
   /* ---- Inquiry form tabs ---- */
   const tabs = document.querySelectorAll(".form-tab");
   const typeField = document.getElementById("inquiry-type");
