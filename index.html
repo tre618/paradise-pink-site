@@ -98,6 +98,7 @@
       <a href="#top">Events</a>
       <a href="#story">Our Story</a>
       <a href="#vision">Vision</a>
+      <a href="#awareness">Awareness</a>
       <a href="#sponsors">Sponsors &amp; Investors</a>
       <a href="#experience">Experience</a>
       <a href="/careers/">Careers</a>
@@ -128,6 +129,7 @@
   <a href="#top">Events</a>
   <a href="#story">Our Story</a>
   <a href="#vision">Vision</a>
+  <a href="#awareness">Awareness</a>
   <a href="#sponsors">Sponsors &amp; Investors</a>
   <a href="#experience">Experience</a>
       <a href="/careers/">Careers</a>
@@ -383,6 +385,153 @@
 
 
 <!-- ============ SPONSOR / INVESTOR OPPORTUNITY ============ -->
+<section class="awareness pad" id="awareness" aria-labelledby="aw-title">
+<style>
+.awareness{background:radial-gradient(ellipse at 85% 0%,rgba(255,45,120,.16),transparent 55%),radial-gradient(ellipse at 5% 100%,rgba(205,164,94,.10),transparent 55%),var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.aw-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:26px}
+.aw-card{padding:32px 28px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,45,120,.10),rgba(255,255,255,.02));transition:transform .25s ease,border-color .25s ease}
+.aw-card:hover{transform:translateY(-4px);border-color:var(--pink)}
+.aw-ico{width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--pink),var(--pink-deep));margin-bottom:20px;box-shadow:0 10px 26px -10px rgba(255,45,120,.7)}
+.aw-ico svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.aw-card h3{font-size:1.2rem;margin-bottom:10px}
+.aw-card p{color:var(--muted);font-size:.94rem}
+.aw-callout{margin:0 0 56px;padding:18px 26px;border-radius:999px;border:1px solid rgba(255,111,181,.4);background:rgba(255,45,120,.08);text-align:center;font-family:var(--serif);font-style:italic;color:var(--blush-soft);font-size:1.05rem}
+.aw-two{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-bottom:56px}
+.aw-panel{padding:36px 34px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+.aw-panel h3{font-size:1.4rem;margin-bottom:6px}
+.aw-panel .aw-sub{color:var(--muted);font-size:.92rem;margin-bottom:22px}
+.aw-list li{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);color:#e6d9df;font-size:.95rem}
+.aw-list li:last-child{border-bottom:0}
+.aw-list li b{display:block;color:var(--white);font-weight:600;margin-bottom:2px}
+.aw-list li span{color:var(--muted);font-size:.9rem}
+.aw-dot{flex:0 0 26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--fuchsia));color:#fff;font-size:.72rem;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.aw-men{margin-top:20px;padding:16px 18px;border-radius:14px;background:rgba(205,164,94,.10);border:1px solid rgba(205,164,94,.35);color:#ecdcc0;font-size:.9rem}
+.aw-find{padding:44px 40px;border-radius:26px;border:1px solid rgba(255,255,255,.16);background:radial-gradient(ellipse at 10% 10%,rgba(255,45,120,.30),transparent 55%),linear-gradient(135deg,var(--pink-deep) 0%,var(--ink) 60%,var(--black) 100%);box-shadow:0 30px 70px -30px rgba(255,45,120,.5)}
+.aw-find h3{font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:8px}
+.aw-find>p{color:var(--blush-soft);opacity:.9;max-width:640px;margin-bottom:26px}
+.aw-search{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.aw-search input{flex:1 1 260px;padding:15px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(10,10,13,.55);color:#fff;font-family:var(--sans);font-size:.95rem;outline:none}
+.aw-search input:focus{border-color:var(--pink)}
+.aw-chips{display:flex;gap:10px;flex-wrap:wrap}
+.aw-chip{padding:12px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.08);color:#fff;font-family:var(--sans);font-size:.85rem;font-weight:500;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.aw-chip:hover{background:var(--pink);border-color:var(--pink);transform:translateY(-2px)}
+.aw-hint{margin-top:14px;font-size:.8rem;color:var(--blush-soft);opacity:.75}
+.aw-res{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.aw-res a{display:block;padding:22px 22px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.03);transition:border-color .25s,transform .25s}
+.aw-res a:hover{border-color:var(--pink);transform:translateY(-3px)}
+.aw-res b{display:block;font-family:var(--serif);font-size:1.05rem;margin-bottom:6px}
+.aw-res span{color:var(--muted);font-size:.86rem;display:block}
+.aw-res em{display:inline-block;margin-top:10px;font-style:normal;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--rose)}
+.aw-help{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px}
+.aw-help div{flex:1 1 240px;padding:18px 22px;border-radius:16px;background:rgba(255,45,120,.10);border:1px solid rgba(255,111,181,.35)}
+.aw-help b{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin-bottom:4px}
+.aw-help a{font-family:var(--serif);font-size:1.3rem;color:#fff}
+.aw-help span{display:block;color:var(--muted);font-size:.82rem}
+.aw-note{margin-top:34px;text-align:center;font-size:.8rem;color:var(--muted);max-width:760px;margin-left:auto;margin-right:auto;opacity:.85}
+.aw-myths{margin-bottom:56px}
+.aw-myths h3{font-size:clamp(1.5rem,3vw,2.1rem);text-align:center;margin-bottom:6px}
+.aw-myths>p{text-align:center;color:var(--muted);margin-bottom:28px}
+.aw-mf{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:16px;border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.aw-mf>div{padding:26px 28px}
+.aw-m{background:rgba(255,255,255,.04)}
+.aw-f{background:linear-gradient(135deg,rgba(255,45,120,.30),rgba(200,16,107,.18))}
+.aw-tag{display:inline-block;padding:5px 14px;border-radius:999px;font-size:.72rem;font-weight:600;letter-spacing:.16em;margin-bottom:12px}
+.aw-m .aw-tag{background:rgba(255,255,255,.12);color:#ddd0d6}
+.aw-f .aw-tag{background:linear-gradient(135deg,var(--pink),var(--pink-deep));color:#fff}
+.aw-mf p{font-family:var(--serif);font-size:1.15rem;line-height:1.4;color:#fff}
+.aw-m p{color:#cbbcc4;text-decoration:line-through;text-decoration-color:rgba(255,45,120,.6)}
+@media(max-width:920px){.aw-mf{grid-template-columns:1fr}}
+@media(max-width:920px){.aw-grid3,.aw-two,.aw-res{grid-template-columns:1fr}.aw-find{padding:34px 24px}.aw-callout{border-radius:22px}}
+</style>
+<div class="container">
+<div class="section-head center">
+<span class="eyebrow">Breast Cancer Awareness</span>
+<h2 class="section-title" id="aw-title">Know Your Body. <em>Protect Your Future.</em></h2>
+<p class="section-lede">Awareness is year-round. Early detection saves lives, and knowing what to look for, when to get screened, and where to go is the first step. This is the information DeGeta's family wishes more people had.</p>
+</div>
+
+<div class="aw-grid3">
+<div class="aw-card"><div class="aw-ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9.2C1.2 8.7 3 5 6.4 5c2 0 3.4 1.1 4.1 2.3.4.7 1.5.7 1.9 0C13.1 6.1 14.5 5 16.5 5 20 5 21.8 8.7 21.3 11.8 19 16.4 12 21 12 21z"/></svg></div><h3>Know Your Normal</h3><p>Pay attention to how your breasts normally look and feel. A new lump, skin dimpling, nipple changes, or unusual discharge is worth a call to a health care professional.</p></div>
+<div class="aw-card"><div class="aw-ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><h3>Make Screening a Priority</h3><p>Mammograms can find breast cancer before symptoms appear. Ask your clinician when to start and how often to screen based on your age and risk. Many guidelines begin at age 40.</p></div>
+<div class="aw-card"><div class="aw-ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 14.2c2.9-.4 5.5 1.7 5.5 4.8"/></svg></div><h3>Know Your Risk</h3><p>Share your family history and any inherited cancer risk with your clinician. A family history can change when and how you should be screened.</p></div>
+</div>
+<p class="aw-callout">Most breast changes are not cancer. New changes still deserve attention.</p>
+
+<div class="aw-two">
+<div class="aw-panel">
+<h3>Lower Your Risk</h3>
+<p class="aw-sub">No habit can guarantee prevention, but these can help reduce risk.</p>
+<ul class="aw-list">
+<li><span class="aw-dot">1</span><div><b>Stay physically active</b><span>Regular movement is linked to a lower risk of breast cancer.</span></div></li>
+<li><span class="aw-dot">2</span><div><b>Maintain a healthy weight</b><span>Especially after menopause, excess weight raises risk.</span></div></li>
+<li><span class="aw-dot">3</span><div><b>Limit alcohol</b><span>The less you drink, the lower the risk. No amount is risk free.</span></div></li>
+<li><span class="aw-dot">4</span><div><b>Don't smoke</b><span>Quitting benefits your overall health and lowers cancer risk.</span></div></li>
+<li><span class="aw-dot">5</span><div><b>Breastfeed if you can</b><span>Breastfeeding may slightly lower risk for some women.</span></div></li>
+<li><span class="aw-dot">6</span><div><b>Don't skip screening</b><span>It does not prevent cancer, but it finds it early when treatment works best.</span></div></li>
+</ul>
+</div>
+<div class="aw-panel">
+<h3>Signs to Watch For</h3>
+<p class="aw-sub">See a health care professional if you notice any of these.</p>
+<ul class="aw-list">
+<li><span class="aw-dot">&bull;</span><div><b>A new lump or thickening</b><span>In the breast or underarm area.</span></div></li>
+<li><span class="aw-dot">&bull;</span><div><b>Skin changes</b><span>Dimpling, puckering, redness, or an orange-peel texture.</span></div></li>
+<li><span class="aw-dot">&bull;</span><div><b>Nipple changes</b><span>Turning inward, new pain, or unusual discharge.</span></div></li>
+<li><span class="aw-dot">&bull;</span><div><b>Change in size or shape</b><span>Swelling or shrinking of all or part of a breast.</span></div></li>
+</ul>
+<p class="aw-men"><b>Men can get breast cancer too.</b> Anyone who notices these changes should get checked.</p>
+</div>
+</div>
+
+<div class="aw-myths">
+<h3>Beyond the Myths</h3>
+<p>Breast cancer facts worth sharing.</p>
+<div class="aw-mf"><div class="aw-m"><span class="aw-tag">MYTH</span><p>Only women get breast cancer.</p></div><div class="aw-f"><span class="aw-tag">FACT</span><p>Men can get breast cancer too.</p></div></div>
+<div class="aw-mf"><div class="aw-m"><span class="aw-tag">MYTH</span><p>No family history means no risk.</p></div><div class="aw-f"><span class="aw-tag">FACT</span><p>Most women diagnosed have no known family history.</p></div></div>
+<div class="aw-mf"><div class="aw-m"><span class="aw-tag">MYTH</span><p>Breast cancer always causes symptoms.</p></div><div class="aw-f"><span class="aw-tag">FACT</span><p>Early breast cancer often has no symptoms.</p></div></div>
+</div>
+
+<div class="aw-find" id="find-care">
+<span class="eyebrow">Find Care Near You</span>
+<h3>Screenings, Clinics &amp; Support Close to Home</h3>
+<p>Enter your city or ZIP code and we'll open a map search for care options near you. Your location is only used to build the search and is never stored by us.</p>
+<div class="aw-search"><input type="text" id="aw-loc" placeholder="City or ZIP code (e.g. Los Angeles, CA)" aria-label="City or ZIP code" autocomplete="postal-code"></div>
+<div class="aw-chips">
+<button type="button" class="aw-chip" data-q="mammogram screening">Mammogram Screening</button>
+<button type="button" class="aw-chip" data-q="free or low cost mammogram">Free / Low-Cost Mammograms</button>
+<button type="button" class="aw-chip" data-q="community health center">Community Health Centers</button>
+<button type="button" class="aw-chip" data-q="breast cancer support group">Support Groups</button>
+<button type="button" class="aw-chip" data-q="breast cancer center">Breast Cancer Centers</button>
+</div>
+<p class="aw-hint" id="aw-hint">Type your city or ZIP above, then pick what you're looking for.</p>
+
+<div class="aw-res">
+<a href="https://www.cancer.org/cancer/types/breast-cancer.html" target="_blank" rel="noopener"><b>American Cancer Society</b><span>Plain-language guides on symptoms, screening, treatment, and living with breast cancer.</span><em>cancer.org &rarr;</em></a>
+<a href="https://www.cancer.gov/types/breast" target="_blank" rel="noopener"><b>National Cancer Institute</b><span>Research-backed information on prevention, risk, genetics, and clinical trials.</span><em>cancer.gov &rarr;</em></a>
+<a href="https://www.komen.org/" target="_blank" rel="noopener"><b>Susan G. Komen</b><span>Support, education, and financial assistance for patients and families.</span><em>komen.org &rarr;</em></a>
+<a href="https://www.cdc.gov/breast-cancer/" target="_blank" rel="noopener"><b>CDC Breast Cancer</b><span>Screening basics and information on programs that help cover the cost of screening.</span><em>cdc.gov &rarr;</em></a>
+<a href="https://findahealthcenter.hrsa.gov/" target="_blank" rel="noopener"><b>Find a Health Center</b><span>Locate affordable, sliding-scale health centers near you, even without insurance.</span><em>findahealthcenter.hrsa.gov &rarr;</em></a>
+<a href="https://www.breastcancer.org/" target="_blank" rel="noopener"><b>Breastcancer.org</b><span>Patient-focused guides, community forums, and questions to ask your care team.</span><em>breastcancer.org &rarr;</em></a>
+</div>
+
+<div class="aw-help">
+<div><b>American Cancer Society 24/7 Helpline</b><a href="tel:18002272345">1-800-227-2345</a><span>Free, confidential support any time.</span></div>
+<div><b>National Cancer Institute</b><a href="tel:18004226237">1-800-422-6237</a><span>Answers to your cancer questions.</span></div>
+<div><b>Komen Patient Care Center</b><a href="tel:18774652636">1-877-465-6636</a><span>Support and resources for patients and families.</span></div>
+</div>
+</div>
+
+<p class="aw-note">This section is for education and is not medical advice. Talk with your doctor about your personal risk and screening schedule. Information is based on guidance from the American Cancer Society, National Cancer Institute, and CDC. If you notice a change or something feels wrong, don't wait: contact a health care professional.</p>
+</div>
+<script>
+(function(){var loc=document.getElementById('aw-loc'),hint=document.getElementById('aw-hint');if(!loc)return;
+document.querySelectorAll('#find-care .aw-chip').forEach(function(b){b.addEventListener('click',function(){var v=loc.value.trim();if(!v){hint.textContent='Please enter your city or ZIP code first.';loc.focus();return;}
+window.open('https://www.google.com/maps/search/'+encodeURIComponent(b.getAttribute('data-q')+' near '+v),'_blank','noopener');hint.textContent='Opened a map search for "'+b.textContent+'" near '+v+'.';});});
+loc.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();hint.textContent='Now pick what you’re looking for below.';}});})();
+</script>
+</section>
+
+
 <section class="sponsor pad" id="sponsors">
   <div class="container">
     <div class="sponsor-top">
@@ -606,6 +755,7 @@
         <div class="footer-col">
           <h5>Partner</h5>
           <a href="#sponsors">Sponsors</a>
+          <a href="#awareness">Awareness</a>
           <a href="#sponsors">Investors</a>
           <a href="/careers/">Careers</a>
       <a href="#contact">Contact</a>
